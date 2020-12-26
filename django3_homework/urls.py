@@ -20,9 +20,12 @@ from django3_homework import views, testdb,search,search2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('testdb/', testdb.testdb),
-    path('search-form/', search.search_form),
-    path('search-post/', search2.search_post),
-    path('search/', search.search),
-]
+    path('index/', views.index,name='index'),
+    path('post/', views.add_post),
+    path('', views.login),
+    path('getlist/', views.get_list),
+#     path('testdb/', testdb.testdb),
+#     path('search-form/', search.search_form),
+#     path('search-post/', search2.search_post),
+#     path('search/', search.search),
+ ]

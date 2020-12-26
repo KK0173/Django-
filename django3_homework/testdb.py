@@ -1,9 +1,9 @@
 from django.http import HttpResponse
 
-from user.models import Test
+from user.models import User
 
 
-def testdb(request):
-    test1 = Test(name='runoob')
-    test1.save()
-    return HttpResponse("<p>数据添加成功！</p>")
+# def testdb(request):
+#     test1 = Test(name='runoob')
+#     test1.save()
+#     return HttpResponse("<p>数据添加成功！</p>")
